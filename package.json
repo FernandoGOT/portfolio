@@ -5,7 +5,8 @@
     "dev": "next",
     "commit": "cz",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "lint": "eslint --ignore-path .gitignore"
   },
   "dependencies": {
     "next": "latest",
@@ -27,7 +28,9 @@
     "husky": "^5.2.0"
   },
   "husky": {
-    "pre-push": "yarn lint"
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
   },
   "license": "MIT",
   "config": {
