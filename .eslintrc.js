@@ -17,7 +17,7 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/jsx-props-no-spreading': [
-      error,
+      'error',
       {
         html: 'enforce',
         custom: 'enforce',
